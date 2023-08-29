@@ -1,0 +1,416 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Zilla Slab', serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+/* Custom Container */
+.container-custom {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+
+
+
+@media (min-width: 1200px) {
+    .container-custom {
+        width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-custom {
+        width: 1340px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container-custom {
+        width: 1540px;
+    }
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        background-color: rgba(27, 22, 26, 0.15) !important;
+        /* backdrop-filter: blur(0.5px) !important; */
+    }
+}
+
+/* .nav-link img {
+    width: 30px;
+    height: 30px;
+  
+     
+} */
+
+.navbar-nav .nav-link {
+    padding: 10px 15px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+    
+}
+
+
+.facebook_logo i {
+    color: #3b5998;
+    font-size: 24px;
+}
+
+.twitter_logo i{
+    color: #1DA1F2; 
+    font-size: 24px;
+}
+
+.linkedIn_logo i{
+    color: #0A66C2; 
+    font-size: 24px;
+}
+
+.instagram_logo i {
+    color: #C13584; 
+    font-size: 24px;
+}
+
+
+.navigation_bar {
+    margin-top: 10px;
+}
+
+.brand_logo:hover {
+    opacity: 0.5;
+}
+
+/* Navigatio Bar */
+
+
+/* Landing Page */
+
+.landing {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.landing_video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@media (min-width: 1400px) {
+    .landing__heading {
+        font-size: 3.2rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .landing__heading2 {
+        font-size: 2.5rem;
+    }
+}
+
+
+.landing_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.landing_content {
+    z-index: 1;
+
+}
+
+.landing__content-width {
+    max-width: 50%;
+}
+
+
+
+/* Gap */
+
+.gap {
+    gap: 2rem;
+}
+
+#profilePicture {
+    max-width: 50%;
+    display: block;
+    height: auto;
+}
+
+
+
+@media (max-width: 767px) {
+
+    #profilePicture {
+        max-width: 100%;
+        display: inline-block;
+        height: auto;
+    }
+    .gap {
+        gap: 0;
+    }
+
+    .landing_content {
+        display: flex;
+        flex-direction: column-reverse;
+         align-items: center;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .landing_content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        left: 6rem;
+    }
+
+}
+.col-lg-4.order-lg-first {
+    order: 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.landing__content-width {
+    max-width: 50%;
+}
+
+.landing__scroll-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 90px;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.landing__scroll-btn:hover {
+    color: azure;
+    opacity: 0.8;
+}
+
+.landing__scroll-btn .bi {
+    color: blanchedalmond;
+    opacity: 0.5;
+    animation: bounce 1s infinite alternate;
+}
+
+  
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-50px);
+    }
+}
+
+  
+/* end of scroll bottom */
+
+/* Project start */
+
+.header-center {
+    height: 1px;
+    background: #dddddd;
+    border-bottom: #ffffff solid 1px;
+    margin-bottom: 3.2rem;
+    position: relative;
+}
+
+.header-center2 {
+    height: 1px;
+    margin-bottom: 3.2rem;
+    position: relative;
+}
+
+.steps {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.steps__section {
+    max-height: auto;
+}
+
+.steps__container-width {
+    max-width: 456px;
+    margin: 0 auto;
+}
+
+.steps--background {
+    background-color: #FEF8F9;
+}
+
+@media (min-width: 544px) {
+    .steps {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .steps__section {
+        max-height: 240px;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+}
+
+
+/* Tools */
+
+/* Applying CSS to sphere */
+
+.Sphere span {
+    display: inline-block;
+}
+.tagcloud {
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: cursive;
+    font-size: 30px;
+    padding-top: 50rem;
+}
+
+@media (max-width: 767px) {
+    .tagcloud {
+
+        left: -10%;
+        padding-top: 10rem;
+        /* Adjust the padding-top value as needed for smaller screens */
+        padding-top: 50rem;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+.wrapper {
+    width: 30px;
+    height: auto;
+    margin: 10% auto;
+}
+
+.img-area {
+    display: grid;
+    grid-template-rows: repeat(4, 15vh);
+    grid-template-columns: repeat(3, 15vw);
+    transition: all 0.2s cubic-bezier(0.5, 0.8, 0.5, 0.2);
+    border-radius: 5px;
+}
+
+.img_icon {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    left: 0;
+    top: 0;
+    transition: all 0.15s cubic-bezier(0.5, 0.2, 0.2, 0.5);
+    position: relative;
+    opacity: 0.7;
+}
+
+.img_icon:hover {
+    width: 70%;
+    height: 200%;
+    opacity: 1;
+    z-index: 1;
+    /* box-shadow: 1em 1em 1em #0004; */
+    transition: all 0.3s cubic-bezier(0.5, 0.2, 0.2, 0.5);
+    top: -100%;
+}
+
+@media (max-width: 767px) {
+    .img-area {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 60px;
+        justify-content: center;
+    }
+
+    .img_icon {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        opacity: 0.7;
+    }
+}
+
+
+
+/* contacts */
+
+.contact {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    background-color: #fafafa;
+
+}
+
+.messagearea textarea {
+    height: 150px;
+    width: 500px;
+}
+
+.name_email input {
+    width: 500px;
+    height: 48px;
+}
+
+
+@media (max-width: 600px) {
+
+    .messagearea textarea {
+        height: 150px;
+        width: 80%;
+    }
+    .name_email input {
+        width: 80%;
+        height: 48px;
+    }
+}
+
+
+.footer .border-highlight{
+    border-top: 1px solid var(--primary--color--highlight);
+}
+

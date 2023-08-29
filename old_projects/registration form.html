@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML form</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, Helvetica;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .form {
+        background: #daeaf3;
+        width: 500px;
+        margin: 0 auto;
+        padding-left: 60px;
+        padding-top: 20px;
+        letter-spacing: 0.5px;
+    }
+
+    .form label,
+    p {
+        color: #000;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .form p.contact {
+        font-size: 12px;
+        margin: 0 0 10px 0;
+        line-height: 14px;
+    }
+
+    .form input[type="text"],
+    .form input[type="email"],
+    .form input[type="password"] {
+        width: 400px;
+    }
+
+    .form input {
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .form select {
+        width: 100px;
+        height: 20px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    .gender {
+        margin-left: 15px;
+    }
+</style>
+
+<body>
+
+
+    <header>
+        <h2>Registeration Form</h2>
+    </header>
+
+    <form class="form">
+        <p class="contact"> <label for="username"> Create a username</label> </p>
+        <input type="text" name="username" id="username">
+
+        <p class="contact"> <label for="email"> Email</label> </p>
+        <input type="email" name="email" id="email">
+
+        <p class="contact"> <label for="password"> Password</label> </p>
+        <input type="password" name="password" id="password">
+
+        <p class="contact"> <label for="repassword"> Re-enter Password</label> </p>
+        <input type="password" name="repassword" id="repassword">
+
+        <p class="contact"> <label for="date"> Date </label> </p>
+        <input type="datetime-local" id="send" oninput="result.value = send.value">
+
+        <p class="contact"> <label for="Age"> Age </label> </p>
+        <input type="number" id="send" oninput="result.value = send.value">
+        
+
+        <p class="contact"> <label for="Weight"> Weight </label> 
+        <input type="range" id="send" min="1" max="200" oninput="result.value = send.value">
+        <input type="text" id="result" value="100"> </p>
+
+        <p class="contact"> <label for="Height"> Height </label> 
+        <input type="range" id="send" min="1" max="200" oninput="result.value = send.value">
+        <input type="text" id="result" value="100"> </p>
+
+        <p class="contact">
+            <label> Select a country </label>
+            <select name="coutnry">
+                <option value="usa">USA</option>
+                <option value="india">INdia</option>
+                <option value="russia">Russia</option>
+                <option value="australia">australia</option>
+                <option value="nepal">Nepal</option>
+                <option value="nepal">Philippines</option>
+            </select>
+        </p>
+
+
+        <p class="contact">
+            <label> Select a gender: </label>
+            <label for="male"> Male </label>
+            <input type="radio" name="gender" id="male">
+
+            <label for="female"> Female </label>
+            <input type="radio" name="gender" id="female">
+        </p>
+
+        <p>
+            <input type="checkbox" value="BSCS">
+            <label for="vehicle1"> Major </label><br>
+
+            <input type="checkbox" value="BSIT">
+            <label for="vehicle1"> Minor </label><br>
+
+            <input type="checkbox" value="BSIS">
+            <label for="vehicle1"> Electives </label><br>
+        </p>
+        <p class="contact">
+            <input type="checkbox" name="termsofservices" id="termsofservices">
+            <label for="termsofservices"> Terms of services</label>
+        </p>
+        <p>
+            <input type="color" value="Color" onclick="alert">
+        </p>
+        <input type="submit" name="submit" value="Submit form">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jan Dierekh Arroyo | Full-stack Developer</title>
+        <meta
+            name="description"
+            content="A short description of the website or the developer's skills">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Style Sheet Link -->
+        <link rel="stylesheet" type="text/css" href="./index.css">
+
+        <!-- Bootstrap Link Head -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            crossorigin="anonymous">
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+        <!-- Tagcloud Link Script-->
+        <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Zilla+Slab&display=swap"
+            rel="stylesheet">
+
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    </head>
+
+    <body class="vh-100 overflow-x-hidden">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand " href="#">
+                    <img src="files/final logo.png" width="50" height="50" alt="Advance">
+                </a>
+                <!-- Toggle Button -->
+                <button
+                    class="navbar-toggler shadow-none border-0"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Sidebar Start -->
+
+                <div
+                    class="sidebar offcanvas offcanvas-start"
+                    tabindex="-1"
+                    id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+
+                    <!-- Sidebar Header -->
+                    <div class="offcanvas-header text-white border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Advance</h5>
+                        <button
+                            type="button"
+                            class="btn-close shadow-none"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <!-- Sidebar Body -->
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center d-flex flex-grow-1 pe-3 fs-5">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="#landing">About</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="#project">Portfolio</a>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="#tools">Tools</a>
+                            </li>
+                        </ul>
+
+                        <!-- Social Links -->
+
+                        <div>
+                            <ul class="d-flex d-grid gap-3 pe-3 flex-grow-1 mt-2">
+                                <li class="list-inline-item mx-2">
+                                    <a class="nav-link twitter_logo"
+                                       href="https://twitter.com/jd_arroyo"
+                                       title="Follow me on Twitter"
+                                       target="_blank"
+                                       rel="noopener">
+                                       <i class="fab fa-twitter" ></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mx-2">
+                                    <a class="nav-link linkedIn_logo"
+                                       href="https://www.linkedin.com/in/derekpolski/"
+                                       title="Connect with me on Linkedin"
+                                       target="_blank"
+                                       rel="noopener">
+                                       <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mx-2">
+                                    <a class="nav-link facebook_logo"
+                                       href="https://www.facebook.com/DerekPolski/"
+                                       title="Like me on Facebook"
+                                       target="_blank"
+                                       rel="noopener">
+                                       <i class="fab fa-facebook-f" ></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mx-2">
+                                    <a class="nav-link instagram_logo"
+                                       href="https://www.instagram.com/jandierekh"
+                                       title="Follow me on Instagram"
+                                       target="_blank"
+                                       rel="noopener">
+                                       <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Start of Landing Section -->
+
+        <section class="landing" id="landing">
+
+            <!-- Background Autoplay -->
+            <img
+                id="gif-background"
+                src="files/ezgif.com-video-to-gif.gif"
+                alt="Background GIF"
+                playsinline="playsinline"
+                autoplay="autoplay"
+                loop="loop"
+                loading="lazy"
+                class="landing_video my-auto mx-auto">
+
+            <div class="landing_overlay "></div>
+
+            <div class="landing_content h-100 container-custom gap position-relative ">
+                <div class="row">
+
+                    <!-- Container for the text -->
+                    <div class="MyIntro text-white col-lg-12  order-lg-last">
+                        <h1 class="landing__heading fw-bold mb-4 mx">Jan Dierekh B. Arroyo</h1>
+                        <h2 class="landing__heading2 fw-bold mb-4 ">Full Stack Web Developer</h2>
+                        <p class="lead mb-4">"Hello, you can call me derek, a multifaceted developer
+                            with an insatiable passion for coding. I delve a bit in A.I, I've even made my
+                            profile by using A.I image based on my face, you'll find me indulging in novels,
+                            books, anime, and manga, which fuels my creativity and problem-solving skills.
+                            and a love and hate relationship with coding, Let's collaborate and turn
+                            extraordinary ideas into reality!"</p>
+                    </div>
+                </div>
+
+                <div class="h-20 col-12 col-sm-6 d-md-flex" id="profilePicture">
+                    <!-- Container for the circular image -->
+                    <div class="m-4 pb-5">
+                        <img class="img-thumbnail border img-fluid" src="files/final profile pic.png" alt="Profile Picture"></div>
+
+                </div>
+ 
+            </div>
+
+            <a href="#scroll-up" class="landing__scroll-btn">
+                Explore
+                <i class="bi bi-arrow-down-short"></i>
+            </a>
+
+        </section>
+
+        <!-- End of Landing Section -->
+
+        <div class="header-center text-center">
+            <h3 class="py-5">SOME OF MY PREVIOUS PROJECTS</h3>
+        </div>
+
+        <!-- Project section -->
+        <a id="scroll-up"></a>
+
+        <!-- Project Start -->
+        <section class="steps container-custom" id="project">
+
+            <div class="row ">
+                <div class="col-12 col-sm-6 d-md-flex justify-content-md-center">
+                    <!-- Updated class name to steps__section -->
+                    <img
+                        src="files/simpleLogSignup.png"
+                        class="img-fluid steps__section-thumbnail"
+                        alt="Simple Sign up and Log In"
+                        loading="lazy">
+                </div>
+                <div class="col-12 col-sm-6 align-items-center">
+                    <div class="steps__container-width">
+                        <span>01</span>
+                        <h1 class="h2 mb-4">Simple Sign up and Log In</h1>
+                        <p class="mb-4">
+                            Introducing my past project - a dynamic Log In and Sign Up page crafted using
+                            HTML, JavaScript, and PHP! In this endeavor, I ingeniously allowed users to
+                            interchange half of the screen background with each other, creating a
+                            captivating visual effect. Though I lost the original files in my old laptop,
+                            fear not, as I've diligently documented the project in a video. Feel free to
+                            watch it and relish the journey into the realm of web development and creative
+                            design. Let's dive in and explore the magic of seamless user experiences!
+                        </p>
+                        <a
+                            href="./old_projects/documentation for log in log out website.mp4"
+                            class="text-dark ">View Video documentation
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 1 end -->
+
+        <!-- Project 2 start -->
+        <section class="steps steps--background">
+
+            <div class="container-custom">
+
+                <div class="row">
+                    <div class="col-12 col-sm-6 d-md-flex justify-content-md-center order-sm-1">
+                        <img
+                            src="files/first registration form.png"
+                            class="img-fluid p-4 steps__section-thumbnail"
+                            alt="Simple Sign up and Log In"
+                            width="553"
+                            height="746"
+                            loading="lazy">
+                    </div>
+                    <div class="col-12 col-sm-6 align-items-center ">
+                        <div class="steps__container-width">
+                            <span>02</span>
+                            <h1 class="h2 mb-4">Registration Form</h1>
+                            <p class="mb-4">
+                                Welcome to my beginner-friendly Registration Form project, a simple HTML-based
+                                endeavor accompanied by internal CSS, designed to provide an easy and rewarding
+                                entry point for newcomers to web development, featuring thoughtfully arranged
+                                input fields and labels that make it a delightful and confidence-boosting coding
+                                exercise.
+                            </p>
+                            <a href="old_projects/registration form.html" class="text-dark ">View HTML
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Project 2 end -->
+
+        <!-- Project 3 start-->
+        <a id="scroll-Upper"></a>
+
+        <section class="steps container-custom">
+            <div class="row">
+                <div class="col-12 col-sm-6 d-md-flex justify-content-md-center">
+                    <img
+                        src="files/old resume.png"
+                        class="img-fluid p-4 steps__section-thumbnail"
+                        alt="Simple Sign up and Log In"
+                        width="553"
+                        height="746"
+                        loading="lazy">
+                </div>
+                <div class="col-12 col-sm-6 align-items-center ">
+                    <div class="steps__container-width">
+                        <span>03</span>
+                        <h1 class="h2 mb-4">My Very first Online Resume</h1>
+                        <p class="mb-4">
+                            Introducing my nostalgic creation - an ancient yet charming Resume Design
+                            project! A product of my school days, I ventured into the world of web design
+                            with minimal knowledge, and it was a rush to complete it. Despite the lack of
+                            features and a deep understanding of design principles, this project serves as a
+                            precious memory, showcasing my growth and progress over time. Internal CSS
+                            became my loyal companion as I aimed to keep the code concise in a single file,
+                            unaware of the wonders of Bootstrap and other tools. Let's revisit this journey
+                            of improvement and reminisce about the early steps that shaped the developer I
+                            am today.
+                        </p>
+                        <a href="./old_projects/old resume.html" class="text-dark ">View HTML
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- Project 3 end -->
+
+        <!-- Tool Sections Start -->
+        <section class="bg-dark py-4" id="tools">
+
+            <div class="header-center2 text-white text-center">
+                <h3 class=" px-5 m-5 p-2">TOOLS THAT I HAVE USED</h3>
+            </div>
+            <div class="container-custom">
+                <div class="row">
+                    <div class=" d-flex col-12 col-sm-4 mb-4 ">
+                        <span class="Sphere"></span>
+                        <script>
+                            const Texts = [
+                                'C++',
+                                'PHP',
+                                'JAVASCRIPT',
+                                'C#',
+                                'BRACKETS',
+                                'REACT',
+                                'PYTHON',
+                                'PHOTOSHOPPED',
+                                'AndroidSim',
+                                'MONGODB',
+                                'EXPRESS',
+                                'MYSQL',
+                                'JQUERY',
+                                'JAVA'
+                            ];
+
+                            const randomColor = () => {
+                                const letters = '0123456789ABCDEF';
+                                let color = '#';
+                                for (let i = 0; i < 6; i++) {
+                                    color += letters[Math.floor(Math.random() * 16)];
+                                }
+                                return color;
+                            };
+
+                            var tagCloud = TagCloud('.Sphere', Texts, {
+                                radius: 230,
+                                maxSpeed: 'normal',
+                                initSpeed: 'fast',
+                                direction: 135,
+                                keep: true
+                            });
+
+                            const changeWordColors = () => {
+                                const words = document.querySelectorAll('.Sphere span');
+                                words.forEach(word => {
+                                    word.style.color = randomColor();
+                                });
+                            };
+
+                            setInterval(changeWordColors, 3000); // Change color every 3 seconds
+                        </script>
+                    </div>
+
+                    <!-- Icons hover start -->
+                    <div class="col-sm-4">
+                        <div class="wrapper">
+                            <!-- Updated div with a container for the app icons -->
+                            <div class=" img-area col-12 col-sm-6  ">
+                                <img class="img_icon" src="files/icons/logo-html5.png" alt="">
+                                <img class="img_icon" src="files/icons/logo-css3.png" alt="">
+                                <img class="img_icon" src="files/icons/logo-expressjs.png" alt="">
+                                <img class="img_icon" src="files/icons/logo-bootstrap.png" alt="">
+                                <img class="img_icon" src="files/icons/logo-git.png" alt="">
+                                <img class="img_icon" src="files/icons/logo-gitlab-ci-cd.png" alt="">
+                                <img class="img_icon" src="files/icons/logo-heroku.png" alt="">
+                                <img class="img_icon" src="files/icons/logo-mongodb.png" alt="">
+                                <img class="img_icon" src="files/icons/logo-nodejs.png" alt="">
+                                <img class="img_icon" src="files/icons/logo-postman.png" alt="">
+                                <img class="img_icon" src="files/icons/logo-react.png" alt="">
+                                <img class="img_icon" src="files/icons/logo-rest.png" alt="">
+                                <img class="img_icon" src="files/icons/logo-sublime-text-3.png" alt="">
+                                <img class="img_icon" src="files/icons/vscode.png" alt="">
+                                <img class="img_icon" src="files/icons/javascript.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Tool Section End -->
+
+        <section class="contact section-padding container-custom" id="contact_ID">
+            <!-- <h1 class="h2 mb-4 text-center">Contact Me</h1> -->
+
+            <div class="contact section-padding ">
+                <div>
+                    <div class="container vh-50">
+                        <div class="row">
+
+                            <h1 class="h2 mb-4 text-center">Contact Me</h1>
+
+                            <div
+                                class="messagearea col-12 col-md-6 d-md-flex align-items-center order-last pt-5 justify-content-center">
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Message</label>
+                                    <textarea class="form-control " id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                                    <button type="button" class="btn btn-primary mt-5">Submit</button>
+                                </div>
+
+                            </div>
+
+                            <div
+                                class="name_email col-12 col-md-6 align-items-center justify-content-center">
+
+                                <h1 class="h2 mb-4 text-lg-start">Send me an email</h1>
+                                <div class="form-group ">
+                                    <label for="NameUnique">Name</label>
+                                    <input
+                                        type="text"
+                                        class="form-control p-2"
+                                        size="40"
+                                        id="NameUnique"
+                                        required="required">
+                                </div>
+
+                                <div class="form-group py-2">
+                                    <label for="EmailUnique">Email</label>
+                                    <input
+                                        type="text"
+                                        class="form-control p-2"
+                                        size="40"
+                                        id="EmailUnique"
+                                        required="required">
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <section>
+            <footer class="footer bg-dark text-white">
+                <div class="container-custom d-flex justify-content-between align-items-center py-3 border-highlight">
+                    <div class="col-md-4 d-flex align-items-center">
+                        <a href="#" class="me-2 text-secondary text-decoration-none">
+                            <span class="text-secondary">&copy; 2023 Developer's Profile</span>
+                        </a>
+                    </div>
+                            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex text-white">
+                                <li class="ms-3"> 
+                                    <a class="text-secondary" href="#"> 
+                                        <i class="bi bi-twitter"></i>
+                                    </a>
+                                 </li>         
+                            
+                            
+                                <li class="ms-3"> 
+                                    <a class="text-secondary" href="#"> 
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                 </li>
+
+                            
+                                <li class="ms-3"> 
+                                    <a class="text-secondary" href="#"> 
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                 </li>
+
+                            
+                                <li class="ms-3"> 
+                                    <a class="text-secondary" href="#"> 
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                 </li>
+                            </ul>
+
+                          
+                </div>
+
+            </footer>
+        </section>
+
+
+        <!-- Bootstrap Bundle -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
